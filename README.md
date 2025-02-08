@@ -1,5 +1,4 @@
-# buzzline-04-case
-
+# buzzline-04-Jaya
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file. 
@@ -151,6 +150,16 @@ For each one, you will need to:
 5. Know the full name of the module you want to run. 
    - Look in the producers folder for csv_producer_case.
    - Look in the consumers folder for csv_consumer_case.
+   
+## Task 7. Start a custom application 
+
+source .venv/bin/activate
+python3 -m producers.project_producer_case
+
+### Consumer terminal 
+
+source .venv/bin/activate
+python3 -m consumers.project_consumer_jaya
 
 ### Review the Application Code
 
